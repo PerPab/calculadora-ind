@@ -1,0 +1,83 @@
+
+
+*{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Macondo', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+.contenedor{
+    margin-top: 3rem;
+    width: fit-content;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border: solid 3px black;
+    border-radius: 2rem;
+   
+}
+#resultado{
+    margin-top: 3%;
+    font-weight: bold;
+    color:red;
+    text-align: center;
+    font-size: 23px;
+    padding: 0%;  
+}
+.salida{
+    padding: 0%;
+}
+
+body{
+    width: 100%;
+   
+}
+
+.boton{
+    width:fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrada{
+    
+    display: flex;
+    justify-items: center;
+    width: 20rem;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+    
+    .formulario{
+        width: 100%;
+    }
+   
+   .boton{
+    
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+   }
+   .contenedor{
+        margin-top: 1rem;
+        padding: 0rem;
+        border: 0px;
+   }
+
+    
+  }
+
+
+
+
+   
+
