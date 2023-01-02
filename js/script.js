@@ -2,6 +2,18 @@
     
  $(document).ready( function(){
 
+    function mostrarAno(){
+        let fecha = new Date();
+        let ano = fecha.getFullYear();
+        let ingreso = document.getElementById('ingreso');
+        let salida = document.getElementById('salida');
+        for(i=ano; i>=1900; i--){
+            ingreso.options.add(new Option(i,i));
+            salida.options.add(new Option(i,i));
+        }
+    }
+    window.onload = mostrarAno;
+
     
     
     function calcular(){
@@ -33,8 +45,9 @@
                 }
             
                 let dineroApagar = (sueldo * aniosTrabajados) + dineroPreAviso;
+                let formato = Intl.NumberFormat().format(dineroApagar);
 
-                $('#resultado').val( `$ ${dineroApagar}`);
+                $('#resultado').val( `$ ${formato}`);
                 }
             else{
                 $('#resultado').val( `Uno de los valores ingresados no es un número`);

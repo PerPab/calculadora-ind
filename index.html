@@ -20,44 +20,66 @@
             <label for="ingreso">
                 <b>Año de ingreso a la empresa</b>
             </label>
-            <input type="text" class="form-control entrada" id="ingreso" autofocus="true">
+            <div class="form-group form-control  mb-3 ingresoAno">
+                <label for="ingreso">Seleccionar año</label>
+
+                <select name="ingreso" id="ingreso">
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="salida">
+                    <b>Año de salida de la empresa</b>
+                </label>
+                <div class="form-group form-control mb-3 salidaAno">
+                    <label for="salida">Seleccionar año</label>
+
+                    <select name="salida" id="salida">
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sueldo-bruto">
+                        <b>Mejor sueldo bruto cobrado en el año</b>
+                    </label>
+                    <input type="text" class="form-control entrada text-center" id="sueldo-bruto">
+
+                </div>
+                <div class="form-group form-control mt-3 salidaAno">
+                    <label for="pre-aviso">¿Recibió preaviso? </label>
+                    <select name="pre-aviso" id="pre-aviso">
+                        <option value="no">No</option>
+                        <option value="si">Si</option>
+                    </select>
+                </div>
+
+                <div class="centrar-boton">
+                    <div class="row boton mt-4 mb-2 ">
+                        <input type="button" id="boton" class="btn btn-primary" value="Calcular indemnización">
+                    </div>
+                </div>
+
+                <div class="form-group mt-3 mb-3 salida">
+                    <label for="resultado"><b>Cantidad aproximada a cobrar</b></label>
+                    <textarea class="form-control" name="resultado" id="resultado" cols="24" rows="3" disabled
+                        readonly></textarea>
+                </div>
+
+
+            </div>
+
 
         </div>
-        <div class="form-group">
-            <label for="salida">
-                <b>Año de salida de la empresa</b>
-            </label>
-            <input type="text" class="form-control entrada" id="salida">
 
-        </div>
-        <div class="form-group">
-            <label for="sueldo-bruto">
-                <b>Mejor sueldo bruto cobrado en el año</b>
-            </label>
-            <input type="text" class="form-control entrada" id="sueldo-bruto">
+    </div>
 
-        </div>
-        <div class="form-group form-control mt-3 entrada">
-            <label for="pre-aviso"><b>Recibio preaviso? </b></label>
-            <select name="pre-aviso" id="pre-aviso">
-                <option value="no">No</option>
-                <option value="si">Si</option>
-            </select>
-        </div>
 
-        <div class="row boton mt-5 mb-4">
-            <input type="button" id="boton" class="btn btn-primary" value="Calcular indemnizacion">
-        </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.3.slim.min.js"></script>
+    <script src="./js/script.js"></script>
 
-        <div class="form-group mt-3 mb-3 salida">
-            <label for="resultado"><b>Cantidad aproximada a cobrar</b></label>
-            <textarea class="form-control" name="resultado" id="resultado" cols="24" rows="3" disabled
-                readonly></textarea>
-        </div>
 
-        <script src="./js/bootstrap.bundle.min.js"></script>
-        <script src="./js/jquery-3.6.3.slim.min.js"></script>
-        <script src="./js/script.js"></script>
 </body>
 
 </html>
