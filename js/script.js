@@ -12,7 +12,7 @@
             salida.options.add(new Option(i,i));
         }
     }
-    window.onload = mostrarAno;
+    //window.onload = mostrarAno;
 
     
     
@@ -61,5 +61,6 @@
     $('#boton').click(function(){
         calcular();
     })
+    mostrarAno();
 
  });
