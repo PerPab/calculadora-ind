@@ -6,7 +6,9 @@
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Rajdhani', sans-serif;
+    
 }
+
 
 .contenedor{
     margin-top: 3rem;
@@ -19,6 +21,7 @@
     align-items: center;
     border: solid 3px black;
     border-radius: 2rem; 
+   
 }
 #resultado{
     margin-top: 3%;
@@ -34,6 +37,7 @@
 
 body{
     width: 100%;
+    background-color: rgb(85,16,149);
 }
 
 .boton{
@@ -46,16 +50,20 @@ body{
     width: 20rem;
     font-size: 1.2rem;
     font-weight: bold;
+    
 }
 
 .salidaAno, .ingresoAno{
     font-size: 1.2rem;
+    
 }
 
 .centrar-boton{
     display: flex;
     justify-content: center;
 }
+
+
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
