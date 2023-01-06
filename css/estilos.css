@@ -5,8 +5,7 @@
     font-family: 'Macondo', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Rajdhani', sans-serif;
-    
+    font-family: 'Rajdhani', sans-serif; 
 }
 
 
@@ -19,7 +18,7 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    border: solid 3px black;
+    border: solid 3px rgb(241, 238, 238);
     border-radius: 2rem; 
    
 }
@@ -35,10 +34,16 @@
     padding: 0%;
 }
 
-body{
+body, html{
     width: 100%;
-    background-color: rgb(85,16,149);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(#5711b9, #280e4d);   
+    
 }
+
 
 .boton{
     width:fit-content; 
